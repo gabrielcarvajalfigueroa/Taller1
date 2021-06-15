@@ -2,12 +2,12 @@ package Taller1.dominio;
 
 public class Clinica {
 	private String ciudad;
-	private int ganancias;
+	private double ganancias;
 	private String estado;
 	private Dentista[] lista;
 	private int cantDentistas;
 	
-	public Clinica(String ciudad,int ganancias,String estado) {
+	public Clinica(String ciudad,double ganancias,String estado) {
 		this.ciudad = ciudad;
 		this.ganancias = ganancias;
 		this.estado = estado;
@@ -19,7 +19,7 @@ public class Clinica {
 	public String toString() {
 		String d = "";
 		for (int i = 0; i < cantDentistas; i++) {
-			d = d + lista[i].getNombre() + " ";
+			d = d + lista[i].getNombre() + ", ";
 		}
 		return "Clinica [ciudad=" + ciudad + ", ganancias=" + ganancias + ", estado=" + estado + ", dentistas=" + d + "]";
 	}
@@ -32,12 +32,12 @@ public class Clinica {
 		this.ciudad = ciudad;
 	}
 
-	public int getGanancias() {
+	public double getGanancias() {
 		return ganancias;
 	}
 
-	public void setGanancias(int ganancias) {
-		this.ganancias = ganancias;
+	public void setGanancias(double d) {
+		this.ganancias = d;
 	}
 
 	public String getEstado() {
@@ -62,6 +62,26 @@ public class Clinica {
 			return true;
 		}
 		return false;
+	}
+
+
+	public Dentista[] getLista() {
+		return lista;
+	}
+
+
+	public void setLista(Dentista[] lista) {
+		this.lista = lista;
+	}
+
+
+	public int getCantDentistas() {
+		return cantDentistas;
+	}
+
+
+	public void setCantDentistas(int cantDentistas) {
+		this.cantDentistas = cantDentistas;
 	}																														
 	
 }

@@ -1,5 +1,10 @@
 package Taller1.dominio;
-
+/**
+ * 
+ * @author Pablo S. Rodriguez
+ * @version 2021.06.13
+ *
+ */
 public class Cita {
 	private Cliente cliente;
 	private String operacion;
@@ -7,8 +12,7 @@ public class Cita {
 	private Dentista dentista;
 	private String fecha;
 	private String codigo;
-	
-	
+
 	public String toString() {
 		return "Cita [cliente=" + cliente.getNombre() + ", operacion=" + operacion + ", ciudad=" + ciudad + ", dentista=" + dentista.getNombre()
 				+ ", fecha=" + fecha + ", codigo=" + codigo + "]";

@@ -5,10 +5,10 @@ public class Dentista {
 	private String rut;
 	private String contrasena;
 	private int sueldo;
-	private int comisiones;
+	private double comisiones;
 	private String ciudad;
 	private int experiencia;
-	public Dentista(String nombre, String rut, String contrasena, int sueldo, int comisiones, String ciudad,
+	public Dentista(String nombre, String rut, String contrasena, int sueldo, double comisiones, String ciudad,
 			int experiencia) {
 		this.nombre = nombre;
 		this.rut = rut;
@@ -20,8 +20,8 @@ public class Dentista {
 	}
 	@Override
 	public String toString() {
-		return "Dentista [nombre=" + nombre + ", rut=" + rut + ", contrasena=" + contrasena + ", sueldo=" + sueldo
-				+ ", comisiones=" + comisiones + ", ciudad=" + ciudad + ", experiencia=" + experiencia + "]";
+		return "nombre:" + nombre + ", rut:" + rut  + ", sueldo:" + sueldo
+				+ ", comisiones:" + comisiones + ", ciudad:" + ciudad + ", experiencia:" + experiencia;
 	}
 	public String getNombre() {
 		return nombre;
@@ -47,11 +47,11 @@ public class Dentista {
 	public void setSueldo(int sueldo) {
 		this.sueldo = sueldo;
 	}
-	public int getComisiones() {
+	public double getComisiones() {
 		return comisiones;
 	}
-	public void setComisiones(int comisiones) {
-		this.comisiones = comisiones;
+	public void setComisiones(double d) {
+		this.comisiones = d;
 	}
 	public String getCiudad() {
 		return ciudad;
